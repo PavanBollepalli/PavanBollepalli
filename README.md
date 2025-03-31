@@ -1,6 +1,6 @@
 # Hi there, I'm Pavan Bollepalli! 👋
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Software+Engineer;Open+Source+Enthusiast;Lifelong+Learner;Full)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Software+Engineer;Open+Source+Enthusiast;Lifelong+Learner;Full+Stack+Developer)](https://git.io/typing-svg)
 
 Welcome to my GitHub profile! I'm a passionate software engineer with a love for coding, learning, and contributing to the open-source community. My journey in tech has been an exciting adventure, and I'm thrilled to share it with you.
 
