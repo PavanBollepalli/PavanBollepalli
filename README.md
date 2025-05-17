@@ -1,4 +1,4 @@
-# Hi there, I'm Pavan Bollepalli! 👋
+# Hi there, I'm Pavan Venkata Naga Manoj! 👋
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Software+Engineer;Open+Source+Enthusiast;Lifelong+Learner;Full+Stack+Developer)](https://git.io/typing-svg)
 
