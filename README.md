@@ -43,11 +43,11 @@ class Pavan:
 
 ---
 
-## 🚀 Flagship Project
-
-<div align="center">
+## 🚀 Featured Projects
 
 ### ⚡ [SkillVector](https://github.com/PavanBollepalli/SkillVector) — AI Career Intelligence Platform
+
+<div align="center">
 
 <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" />
 <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" />
@@ -102,15 +102,52 @@ L2  Tavily Live Web Fetch        →  1-3s     — only for cache misses, parall
 
 ---
 
-## 📂 Other Projects
+### 🗺️ [CodeAtlas](https://github.com/PavanBollepalli/CodeAtlas) — AI Repository Intelligence Engine
 
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| [**NextVentures**](https://github.com/PavanBollepalli/nextventures) | Startup discovery platform with SSR, GitHub OAuth, and real-time CMS sync | Next.js 14, TypeScript, Sanity, NextAuth |
-| [**HandShake**](https://github.com/PavanBollepalli/handshake) | Real-time ASL gesture recognition — CNN + MediaPipe hand landmark detection | TensorFlow, OpenCV, MediaPipe, Flask |
-| [**PrepWise**](https://github.com/PavanBollepalli/prepwise) | AI interview prep with real-time speech analysis and feedback | Node.js, FastAPI, React, Socket.io |
+<div align="center">
 
----
+<img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=flat-square&logo=next.js" />
+<img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/ChromaDB-Vector%20Store-5B5FC7?style=flat-square" />
+<img src="https://img.shields.io/badge/Groq-LLM-F55036?style=flat-square" />
+<img src="https://img.shields.io/badge/Mistral-Embeddings-FF7000?style=flat-square" />
+<img src="https://img.shields.io/badge/AST-Code%20Parsing-4CAF50?style=flat-square" />
+
+</div>
+
+Turn any public GitHub repository into an explorable knowledge base. Paste a URL — get a full architecture diagram, file explorer, language breakdown, and an AI chat interface that answers questions with source citations. Built for developers who need to onboard onto unfamiliar codebases fast.
+
+```text
+GitHub URL → Clone → AST Parse → Chunk → Embed → ChromaDB → RAG Chat + Diagrams
+```
+
+<details>
+<summary><b>🔍 Technical Deep Dive (click to expand)</b></summary>
+
+<br>
+
+#### AST-based Code Intelligence
+- Python files parsed via **AST** — extracts functions, classes, docstrings with structural context
+- Regex-based extraction for JS, TS, Java, Go, Rust, C/C++ — 15+ languages supported
+- Chunks carry metadata: file path, language, symbol type — enabling precise citation in answers
+
+#### RAG Pipeline
+- **ChromaDB** persistent vector store — survives backend restarts, no re-indexing needed
+- Semantic retrieval with `TOP_K=10` chunks injected as grounded context into Groq LLM
+- Streamed responses via **Server-Sent Events** — answers appear token by token
+
+#### Architecture Diagram Generation
+- Groq LLM infers component relationships from retrieved code chunks
+- Outputs valid **Mermaid syntax** — rendered live in frontend for class, dependency, flow, and architecture views
+- Diagrams cached to disk — persist across sessions without regeneration
+
+#### Production-Grade Dev Tooling
+- Custom `dev.py` excludes `cloned_repos/`, `chroma_data/`, `repo_metadata/` from hot reload watcher — prevents server crash mid-analysis
+- Repo metadata JSON store enables dashboard recovery after restarts
+- Size validation + shallow cloning keeps analysis fast even for large repos
+
+</details>
 
 ## 💼 Experience
 
